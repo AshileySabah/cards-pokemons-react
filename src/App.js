@@ -3,6 +3,7 @@ import "./App.css";
 import { useState, useEffect } from "react";
 
 import Card from "./componentes/Card/Card.js";
+import Header from "./componentes/Header/Header.js";
 
 function App() {
   const [resultRequisicao, setResultRequisicao] = useState([]);
@@ -45,6 +46,7 @@ function App() {
 
   return (
     <div className="App">
+      <Header/>
       <h2 className="titulo-jogo">{statusJogo}</h2>
       <ul className="cards-lista">
         {resultRequisicao.map((card, index) => {

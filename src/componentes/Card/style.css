@@ -4,6 +4,7 @@
   border-radius: 5px;
   border: 1px solid #808080;
   margin: 20px;
+  box-shadow: 5px 6px 7px 7px rgba(0,0,0,0.82), inset 4px 4px 15px 0px rgba(170, 18, 18, 0.82);
 }
 
 .card-caixa-imagem {
