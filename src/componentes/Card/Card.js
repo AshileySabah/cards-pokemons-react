@@ -3,14 +3,14 @@ import './style.css';
 const Card = (props) => {
   return (
     <section className="card">
-      <div>
-        <img src={props.imagem} alt={props.name} />
+      <div className="card-caixa-imagem">
+        <img src={props.imagem} alt={props.name} className="card-imagem"/>
       </div>
-      <div>
-        <p>{props.name}</p>
-        <p>{props.tipo}</p>
-        <p>{props.height}</p>
-        <p>{props.weight}</p>
+      <div className="card-caixa-especificacoes">
+        <p>Nome: <span className="primeira-maiuscula">{props.name}</span></p>
+        <p>Tipo: <span className="primeira-maiuscula">{props.tipo}</span></p>
+        <p>Altura: {props.height}</p>
+        <p>Peso: {props.weight}</p>
       </div>
     </section>
   );

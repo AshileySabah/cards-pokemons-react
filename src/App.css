@@ -1,0 +1,32 @@
+:root {
+  --azul: #3d58a5;
+  --vermelho: #ef4036;
+  --amarelo: #ffcb01;
+}
+
+.App{
+  background-color: var(--amarelo);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+.cards-lista{
+  list-style: none;
+  display: flex;
+}
+
+.botao-jogar{
+  background-color: rgb(7, 136, 7);
+  width: 100px;
+  height: 100px;
+  border: 8px solid rgb(11, 156, 11);
+  border-radius: 50px;
+  outline: 3px solid rgb(14, 179, 14);
+}
+
+.titulo-jogo{
+  font-weight: 100;
+  font-size: 2em;
+}

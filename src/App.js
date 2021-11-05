@@ -45,8 +45,8 @@ function App() {
 
   return (
     <div className="App">
-      <h2>{statusJogo}</h2>
-      <ul>
+      <h2 className="titulo-jogo">{statusJogo}</h2>
+      <ul className="cards-lista">
         {resultRequisicao.map((card, index) => {
           return (
             <li key={index}>
@@ -61,7 +61,7 @@ function App() {
           );
         })}
       </ul>
-      <button onClick={requisicao}>Buscar</button>
+      <button className="botao-jogar" onClick={requisicao}>Vai</button>
     </div>
   );
 }
